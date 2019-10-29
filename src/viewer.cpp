@@ -2,6 +2,7 @@
 // Author: Xiaohan Fei (feixh@cs.ucla.edu)
 #include "glog/logging.h"
 #include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/imgproc/types_c.h"
 #include "json/json.h"
 
 #include "core.h"

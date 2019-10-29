@@ -2,6 +2,8 @@
 // info on input images.
 // Author: Xiaohan Fei (feixh@cs.ucla.edu)
 #include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/imgproc/types_c.h"
+#include "opencv2/imgproc/imgproc_c.h"
 
 #include "feature.h"
 #include "visualize.h"

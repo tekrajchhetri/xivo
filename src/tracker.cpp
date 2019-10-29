@@ -6,6 +6,7 @@
 #include "glog/logging.h"
 #include "opencv2/video/video.hpp"
 #include "opencv2/xfeatures2d.hpp"
+//#include "opencv2/features2d.hpp"
 
 #include "feature.h"
 #include "tracker.h"
@@ -59,6 +60,7 @@ Tracker::Tracker(const Json::Value &cfg) : cfg_{cfg} {
                                 detector_cfg.get("edgeThreshold", 31).asInt(),
                                 detector_cfg.get("firstLevel", 0).asInt(),
                                 detector_cfg.get("WTA_K", 2).asInt(),
+				cv::ORB::HARRIS_SCORE,
                                 detector_cfg.get("patchSize", 31).asInt(),
                                 detector_cfg.get("fastThreshold", 20).asInt());
   } else if (detector_type == "AGAST") {
